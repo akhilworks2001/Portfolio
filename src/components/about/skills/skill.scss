@@ -1,0 +1,85 @@
+@import "../../../app.scss";
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+    @include tablet {
+        justify-content: space-evenly;
+    }
+
+    @include mobile {
+        flex-direction: column;
+    }
+
+    .text {
+        font-size: 20px;
+        font-family: sans-serif;
+
+        @include tablet {
+            white-space: nowrap;
+            font-size: 14px;
+        }
+
+        @include mobile {
+            font-size: 12px;
+        }
+    }
+
+    .logos {
+        #logoContainer {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(8%, 1fr));
+            gap: 10px;
+            max-width: 700px;
+            margin: 0 auto;
+            list-style: none;
+
+            @include tablet {
+                gap: 8px;
+                max-width: 600px;
+            }
+            
+            @include mobile {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5px;
+            }
+    
+            li {
+                width: 3rem;
+                height: 3rem;
+                border-radius: 50%;
+                border: 2px solid transparent;
+                background-color: white;
+
+                @include tablet {
+                    width: 2.5rem;
+                    height: 2.5rem;
+                }
+
+                @include mobile {
+                    width: 2rem;
+                    height: 2rem;
+                }
+
+                &:hover {
+                    box-shadow: 4px 4px 8px 3px rgb(95, 95, 197);
+                }
+    
+                img {
+                    object-fit: contain;
+                    height: 100%;
+                    padding: 5px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
