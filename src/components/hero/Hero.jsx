@@ -41,6 +41,13 @@ const slideVariants = {
     },
 }
 
+const downloadCV = () => {
+    const link = document.createElement('a');
+    link.href = '/Resume_Akhilverma_Mar27.pdf'; 
+    link.download = 'Resume_Akhilverma_Mar27.pdf';
+    link.click();
+  };
+
 export default function Hero() {
   return (
     <div className="hero">
@@ -51,11 +58,10 @@ export default function Hero() {
                 initial="initial"
                 animate="animate">
                 <div className="textBox">
-                <motion.h2 variants={textVariants}>Akhil Verma</motion.h2>
-                <motion.h1 variants={textVariants}>Front-end Developer</motion.h1>
+                <motion.h1 variants={textVariants}>Hello! I'm Akhil Verma</motion.h1>
+                <motion.h2 variants={textVariants}>Front-end Developer</motion.h2>
                 <motion.div variants={textVariants} className="buttons">
-                    <motion.button variants={textVariants}>See The Latest Works</motion.button>
-                    <motion.button variants={textVariants}>Contact Me</motion.button>
+                    <motion.button onClick={downloadCV} variants={textVariants}>Download CV</motion.button>
                 </motion.div>
                 <motion.img variants={textVariants} animate="scrollBtn" src="/scroll.png" alt="" />
                 </div>

@@ -35,7 +35,6 @@
         
         h2 {
             font-size: 30px;
-            color: rebeccapurple;
             letter-spacing: 10px;
 
             @include tablet {
@@ -46,6 +45,7 @@
 
         h1 {
             font-size: 80px; 
+            color: rebeccapurple;
 
             @include tablet {
                 font-size: 56px;
