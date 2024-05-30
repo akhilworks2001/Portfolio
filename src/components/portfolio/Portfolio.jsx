@@ -2,7 +2,8 @@ import React, { useRef } from 'react';
 import { motion, useScroll, useSpring } from 'framer-motion';
 import moveFactsImg from "../../../public/movieFacts.jpg";
 import youTubeImg from "../../../public/youtube.jpg";
-import ProVeterinarianImg from "../../../public/Pro-veterinarian.jpg"
+import ProVeterinarianImg from "../../../public/Pro-veterinarian.jpg";
+import Ecommerce from "../../public/e-commmerce.jpg";
 
 import "./portfolio.scss";
 
@@ -34,9 +35,17 @@ const items = [
         img: ProVeterinarianImg,
         desc: "This web application serves as a demonstration of front-end styling techniques using HTML and Bootstrap framework. It offers a curated collection of styled components, layouts, and responsive design patterns.",
         codeLink: "https://github.com/akhilworks2001/Pro-Veterinarian",
-        projectLink: "https://akhilworks2001.github.io/Pro-Veterinarian/",
+        projectLink: "https://akhilworks2001.github.io/Pro-Veterinarian",
         techUsed: ["html", "bootstrap"],
     },
+    {
+        id: 4,
+        title: "E-commerce",
+        img: Ecommerce,
+        desc: "this web hosts a scalable and secure e-commerce platform with a comprehensive set of features for both customers and administrators. Users can enjoy seamless product browsing, a streamlined checkout process. Admins can efficiently manage products, orders, and user accounts, with access to detailed analytics.",
+        projectLink: "https://e-commerce-two-nu-93.vercel.app",
+        techUsed: ["React", "Router-dom", "firebase", "Redux", "Readux-saga" ]
+    }
 ];
 
 
