@@ -26,7 +26,7 @@ const items = [
         img: Ecommerce,
         desc: "this web hosts a scalable and secure e-commerce platform with a comprehensive set of features for both customers and administrators. Users can enjoy seamless product browsing, a streamlined checkout process. Admins can efficiently manage products, orders, and user accounts, with access to detailed analytics.",
         projectLink: "https://e-commerce-two-nu-93.vercel.app",
-        techUsed: ["React", "Router-dom", "firebase", "Redux", "Readux-saga"],
+        techUsed: ["React", "Router-dom", "firebase", "Redux", "Readux-saga", "Bootstrap"],
     },
     {
         id: 3,
