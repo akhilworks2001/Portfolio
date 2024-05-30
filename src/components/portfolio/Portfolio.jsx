@@ -3,7 +3,7 @@ import { motion, useScroll, useSpring } from 'framer-motion';
 import moveFactsImg from "../../../public/movieFacts.jpg";
 import youTubeImg from "../../../public/youtube.jpg";
 import ProVeterinarianImg from "../../../public/Pro-veterinarian.jpg";
-import Ecommerce from "../../public/e-commmerce.jpg";
+import Ecommerce from "../../../public/e-commmerce.jpg";
 
 import "./portfolio.scss";
 
