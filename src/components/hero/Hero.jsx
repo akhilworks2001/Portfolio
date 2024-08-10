@@ -43,8 +43,13 @@ const slideVariants = {
 
 const downloadCV = () => {
     const link = document.createElement('a');
+<<<<<<< HEAD
     link.href = '/Akhil_latest.pdf'; 
     link.download = 'Akhil_latest.pdf';
+=======
+    link.href = '/Akhilverma_June4_Resume.pdf'; 
+    link.download = 'Akhilverma_June4_Resume.pdf';
+>>>>>>> 8dd0d19ff6f5ab312cf7ef7be0ed904894cf6bd4
     link.click();
   };
 
