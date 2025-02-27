@@ -74,9 +74,6 @@ export default function Hero() {
         <motion.div className="slidingTextContainer" variants={slideVariants} initial="initial" animate="animate">
             Front-end developer
         </motion.div>
-        <div className="imageContainer">
-            <img src="/me.png" alt="" />
-        </div>
     </div>
   )
 }
